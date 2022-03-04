@@ -10,11 +10,36 @@
 <link href = "https://fonts.googleapis.com/css2?family=Archivo=Blaxk&family=Manrope:wght@300&display= swap" rel="stylesheet">
 </head>
 <body>
-    <form action="https://rivshr27.github.io/vinit.github.io/">
+    
+        <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+
+
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+<button class="tablink" onclick="openPage('e\Education', this, 'green')" id="defaultOpen">Education</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>Education</h3>
+  <p> a lot to learn now</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or just remember once</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
     <div class = "headings">
         <h1>ABOUT ME</h1>
-        <h1 class = "Secondheading">ABOUT ME</h1>
-        <h1 class = "Thirdheading">ABOUT ME</h1>
+        
 
     </div>
     <div classs ="image">
@@ -24,14 +49,17 @@
     <h2></h2>
     <h3 id ="hello">Hello</h3>
     <h1 id ="namedetails">I'm<span id="firstName">Vinit</span>Singh</h1>
-    <P>This is Vinit Singh , a student, a developer and a creator . Currently a freshman at  indian institute of information technology bhagalpur . 
-        Pursuing a B.tech degree in computer science and engineering.
-        I love photography.   
+    <P>This is Vinit Singh , a student, a developer and a creator.
+    Currently a freshman at  indian institute of information technology bhagalpur . 
+           Pursuing a B.tech degree in computer science and engineering.
+           I love photography.   
         Currently i lives in Varanasi Uttar pradesh.
     </P>
-    <div class ="headings">
+    <div class ="row">
+    <div class="column"></div>
         <h1>Education</h1> 
-        <li>1st year student at iit bhagalpur</li>
+        <li>1st year student at iiit bhagalpur</li>
+        <img src="23.jpeg">
  <li>12th in year 2020</li>
  <ul>
      <li>from Universal Public School</li>
@@ -40,12 +68,13 @@
  <li>10th in year 2018</li>
  <ul>
      <li>from St. John's School</li>
+     <img src ="school.jpeg">
  </ul>
     </div>
-    <div class="headings">
+    <div class="row">
+        <div class ="column"></div>
         <h1>Skills</h1>
-        <h1 class = "Secondheading">Skills</h1>
-        <h1 class = "Thirdheading">Skills</h1>
+        
 
         <li>Educatinal Skills</li>
         <ul>
@@ -63,17 +92,16 @@
         </ul>
 
     
-    <div class="image">
-        <img src="profile.tiff">
+    
 
     </div>
 
         
     </ol><p></p>
-    <div class="headings">
-        <h1>LET'S CONNECT</h1>
-        <h1 class = "Secondheading">LET'S CONNECT</h1>
-        <h1 class = "Thirdheading">LET'S CONNECT</h1>
+    <div class="row">
+        <div class="column"></div>
+        <h1>Lets Connect</h1>
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -84,8 +112,7 @@
 <a href="#" class="fa fa-github"></a>
 
     </div>
-    <div class ="image">
-        <img src ="image2.jpg">
+
 
     </div>
     
@@ -96,6 +123,7 @@
     <input type="text" name="firstName" placeholder="FirstName"required>
     <input type="email" name="emailID" placeholder="Your Email" required>
     <button>Submit</button>
+    
 </form>
 </form>
 </body>    
